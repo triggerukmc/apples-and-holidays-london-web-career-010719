@@ -49,7 +49,7 @@ def all_supplies_in_holidays(holiday_hash)
 holiday_hash.each do |keys, values|
   puts "#{keys.capitalize}:"
   values.each do |data, attribute|
-    attJoined = attribute.join(",")
+    attJoined = attribute.join(", ")
     dataSplit = data.to_s.split("_")
       dataSplit.each do |x|
        x.capitalize!
