@@ -55,7 +55,7 @@ holiday_hash.each do |keys, values|
        x.capitalize!
       end
     holiday = dataSplit.join(" ")
-    puts "  
+    puts "#{holiday}: #{attJoined}"
     end
   end
 end
