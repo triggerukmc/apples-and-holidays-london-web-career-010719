@@ -50,6 +50,7 @@ holiday_hash.each do |keys, values|
   puts "#{keys.capitalize}:"
   values.each do |data, attribute|
     dataJoined = data.join(",")
+    attSplit = attribute.to_s.split("_")
     puts "  #{data.capitalize}: #{attribute.to_s}"
     end
   end
