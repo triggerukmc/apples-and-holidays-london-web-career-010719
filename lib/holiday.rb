@@ -49,12 +49,12 @@ def all_supplies_in_holidays(holiday_hash)
 holiday_hash.each do |keys, values|
   puts "#{keys.capitalize}:"
   values.each do |data, attribute|
-    dataJoined = data.join(",")
-    attSplit = attribute.to_s.split("_")
-      attSplit.each do |x|
+    attJoined = attribute.join(",")
+    dataSplit = data.to_s.split("_")
+      dataSplit.each do |x|
        x.capitalize!
       end
-    holiday = attSplit.join(" ")
+    holiday = dataSplit.join(" ")
     puts "  
     end
   end
