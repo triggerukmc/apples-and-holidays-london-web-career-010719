@@ -57,8 +57,6 @@ holiday_hash.each do |keys, values|
     holiday = dataSplit.join(" ")
     puts "#{holiday}: #{attJoined}"
     end
-  end
-  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
